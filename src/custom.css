@@ -1,0 +1,5 @@
+:root {
+    --ck-spacing-standard: 0px;
+    --ck-color-focus-border: hsl(0, 0%, 60%);
+    --ck-inner-shadow: none;
+}
