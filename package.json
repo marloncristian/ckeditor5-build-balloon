@@ -1,6 +1,6 @@
 {
   "name": "@marloncristian/ckeditor5-build-balloon",
-  "version": "12.1.0",
+  "version": "12.1.1",
   "description": "The balloon editor build of CKEditor 5 (Oricom Version) – the best browser-based rich text editor.",
   "keywords": [
     "wysiwyg",
