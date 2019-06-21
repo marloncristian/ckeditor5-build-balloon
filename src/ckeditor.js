@@ -13,6 +13,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from './plugins/font/font';
 
 import './custom.css';
 
@@ -26,7 +27,8 @@ BalloonEditor.builtinPlugins = [
 	Italic,
 	Heading,
 	Paragraph,
-	Alignment
+	Alignment,
+	Font
 ];
 
 // Editor configuration.
@@ -35,11 +37,44 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
+			'fontSize',
+			'fontFamily',
 			'bold',
 			'italic',
 			'alignment',
 			'undo',
 			'redo'
+		]
+	},
+	fontSize: {
+		options: [
+			'default',
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15
+		]
+	},
+	fontFamily: {
+		options: [
+			'default',
+			'Aguafina Script, cursive',
+			'Amatic SC, cursive',
+			'Bitter, serif',
+			'Catamaran, sans-serif',
+			'Dancing Script, cursive',
+			'Gloria Hallelujah, cursive',
+			'Indie Flower, cursive',
+			'Lobster, cursive',
+			'Noto Serif, serif',
+			'Raleway, sans-serif',
+			'Shadows Into Light, cursive',
+			'Source Sans Pro, sans-serif',
+			'Swanky and Moo Moo, cursive'
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
